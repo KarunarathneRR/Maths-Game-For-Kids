@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GameApp</string>
+    <string name="game_over">- Game Over -</string>
+    <string name="let_s_do_it">Let,s Do it !</string>
+    <string name="button">Button</string>
+    <string name="back">Back</string>
+    <string name="play_again">Play Again</string>
+    <string name="_0_0">0/0</string>
+    <string name="your_score">Your Score</string>
+    <string name="kid_s_game">KID\'S GAME</string>
+</resources>

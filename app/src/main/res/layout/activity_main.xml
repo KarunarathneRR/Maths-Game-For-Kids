@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    tools:context=".MainActivity"
+    style="@style/constraintLayout">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="32dp">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="140dp"
+            android:layout_height="105dp"
+            android:layout_marginTop="220dp"
+            android:backgroundTint="#DF165A"
+            android:onClick="optionSelect"
+            android:tag="1"
+
+            android:text="@string/button"
+            android:textSize="24sp"
+            app:layout_constraintBaseline_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toEndOf="@+id/button0"
+            app:layout_constraintTop_toBottomOf="@+id/ScoreTextView" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="140dp"
+            android:layout_height="105dp"
+            android:backgroundTint="#0E8C80"
+            android:onClick="optionSelect"
+            android:tag="2"
+            android:text="Button"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/button3"
+            app:layout_constraintEnd_toEndOf="@+id/button0"
+            app:layout_constraintStart_toStartOf="@+id/button0"
+            app:layout_constraintTop_toTopOf="@+id/button3"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_width="140dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="36dp"
+            android:backgroundTint="#3F51B5"
+            android:onClick="optionSelect"
+            android:tag="0"
+            android:text="Button"
+
+            android:textSize="24sp"
+            app:layout_constraintBaseline_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/button1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/button1"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/AlertTextView"
+            android:layout_width="206dp"
+            android:layout_height="125dp"
+            android:gravity="center|center_horizontal|center_vertical"
+            android:padding="20dp"
+            android:text="@string/let_s_do_it"
+            android:textColor="#555555"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/QuestionTextView"
+            app:layout_constraintVertical_bias="0.899"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/QuestionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:padding="20dp"
+            android:text="29 + 12"
+            android:textColor="#555555"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="140dp"
+            android:layout_height="105dp"
+            android:layout_marginBottom="196dp"
+            android:onClick="optionSelect"
+            android:tag="3"
+            android:text="Button"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/button1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/button1"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/ScoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="36dp"
+            android:background="#4CAF50"
+            android:padding="10dp"
+            android:text="0/0"
+            android:textColor="#F4F0F0"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/TimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF9800"
+            android:padding="10dp"
+            android:text="30s"
+            android:textColor="#FDFCFC"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="@+id/ScoreTextView"
+            app:layout_constraintEnd_toStartOf="@+id/ScoreTextView"
+            app:layout_constraintHorizontal_bias="0.125"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/ScoreTextView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
